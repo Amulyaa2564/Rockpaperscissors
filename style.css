@@ -1,0 +1,122 @@
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+
+}
+#prize {
+    display: block;
+    margin: 0 auto 10px auto; /* center horizontally, add bottom spacing */
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-box{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-box h1 {
+    font-family: "Press Start 2P", monospace;
+    font-size: 24px;
+    color: white;
+    text-shadow: 
+        3px 3px 0px black,
+        -3px -3px 0px black,
+        3px -3px 0px black,
+        -3px 3px 0px black;
+}
+
+
+
+.main-box p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+#rock{
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 85px;
+}
+#paper{
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 85px;
+}
+#scissors{
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 85px;
+    
+}
+button {
+    margin: 10px;
+    position: relative;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    background: transparent;
+    border: none;
+    color: transparent;
+}
+
+#rock:hover::after,
+#paper:hover::after,
+#scissors:hover::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#rock:hover::after {
+    background-image: url("rock.png");
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+#paper:hover::after {
+    background-image: url("paper.png");
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+#scissors:hover::after {
+    background-image: url("scissors.png");
+    width: 70px;
+    height: 70px;
+    margin-top: 6px;
+}
+
+
