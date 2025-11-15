@@ -29,7 +29,7 @@ body{
 }
 .main-box h1 {
     font-family: "Press Start 2P", monospace;
-    font-size: 24px;
+    font-size: 3vw;
     color: white;
     text-shadow: 
         3px 3px 0px black,
@@ -42,7 +42,7 @@ body{
 
 .main-box p{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bold;
     text-shadow: 2px 2px 5px black;
 }
@@ -53,7 +53,7 @@ body{
     color: white;
     padding: 15px;
     border-radius: 5px;
-    width: 85px;
+    width: 30%;
 }
 #paper{
     border: none;
@@ -61,7 +61,7 @@ body{
     color: white;
     padding: 15px;
     border-radius: 5px;
-    width: 85px;
+    width: 30%;
 }
 #scissors{
     border: none;
@@ -69,7 +69,7 @@ body{
     color: white;
     padding: 15px;
     border-radius: 5px;
-    width: 85px;
+    width: 36%;
     
 }
 button {
